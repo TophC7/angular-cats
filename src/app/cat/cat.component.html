@@ -1,0 +1,29 @@
+<div
+	id="container"
+	class="flex flex-col gap-5 h-full justify-center items-center"
+>
+	<div
+		id="images"
+		class="flex flex-col sm:flex-row gap-5 w-full justify-center"
+	>
+		<figure class="w-[30%] sm:w-1/4 mx-auto sm:mx-0 text-center">
+			<h2 class="p-3 font-medium text-lg">Emmi</h2>
+			<img
+				class="rounded-lg shadow-lg"
+				src="/assets/emmi.jpg"
+				alt="my cat emmi with airpods sleeping"
+			/>
+		</figure>
+		<figure class="w-[30%] sm:w-1/4 mx-auto sm:mx-0 text-center">
+			<h2 class="p-3 font-medium text-lg">Kohzo</h2>
+			<img
+				class="rounded-lg shadow-lg"
+				src="/assets/kohzo.jpeg"
+				alt="my cat emmi with airpods sleeping"
+			/>
+		</figure>
+	</div>
+	<button class="not-italic text-xl animate-bounce" (click)="playPause()">
+		⏯️
+	</button>
+</div>
