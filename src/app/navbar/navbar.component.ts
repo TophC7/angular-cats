@@ -9,6 +9,11 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
+  toggleSideBar(){
+    document.getElementById('sidebar')?.classList.toggle('w-0');
+    document.getElementById('sidebar')?.classList.toggle('w-[20rem]');
+  }
+
   ngOnInit(): void {
   }
 

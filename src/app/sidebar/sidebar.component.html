@@ -1,0 +1,19 @@
+<div id="sidebar" class="h-screen w-0 whitespace-nowrap bg-neutral-200 transition-all ease-linear">
+	<h2 class="bg bg-neutral-600 p-3 text-center font-sans font-bold text-neutral-100">Get Emails About my Cats!</h2>
+	<form [formGroup]="signUpForm" (ngSubmit)="alertSignUp()" class="flex flex-col gap-3 p-3">
+		<label for="name">
+			Name
+			<span *ngIf="name?.invalid && name?.touched" class="text-xs text-red-400"> * Required</span>
+		</label>
+
+		<input type="text" name="name" id="name-input" placeholder="Full Name" class="px-1" formControlName="name" />
+
+		<label for="email">
+			Email
+			<span *ngIf="email?.invalid && email?.touched" class="text-xs text-red-400"> * Required</span>
+		</label>
+		<input type="email" name="email" id="email-input" class="px-1" formControlName="email" placeholder="Email" />
+
+		<button type="submit" class="ml-auto w-min bg-yellow-300 p-1 px-3">Submit</button>
+	</form>
+</div>

@@ -1,29 +1,13 @@
-<div
-	id="container"
-	class="flex flex-col gap-5 h-full justify-center items-center"
->
-	<div
-		id="images"
-		class="flex flex-col sm:flex-row gap-5 w-full justify-center"
-	>
-		<figure class="w-[30%] sm:w-1/4 mx-auto sm:mx-0 text-center">
-			<h2 class="p-3 font-medium text-lg">Emmi</h2>
-			<img
-				class="rounded-lg shadow-lg"
-				src="/assets/emmi.jpg"
-				alt="my cat emmi with airpods sleeping"
-			/>
+<div id="container" class="flex h-full flex-col items-center justify-center gap-5">
+	<div id="images" class="flex w-full flex-col justify-center gap-5 sm:flex-row">
+		<figure class="mx-auto w-[30%] text-center sm:mx-0 sm:w-1/4">
+			<h2 class="p-3 text-lg font-medium">Emmi</h2>
+			<img class="rounded-lg shadow-lg" src="/assets/emmi.jpg" alt="my cat emmi with airpods sleeping" />
 		</figure>
-		<figure class="w-[30%] sm:w-1/4 mx-auto sm:mx-0 text-center">
-			<h2 class="p-3 font-medium text-lg">Kohzo</h2>
-			<img
-				class="rounded-lg shadow-lg"
-				src="/assets/kohzo.jpeg"
-				alt="my cat emmi with airpods sleeping"
-			/>
+		<figure class="mx-auto w-[30%] text-center sm:mx-0 sm:w-1/4">
+			<h2 class="p-3 text-lg font-medium">Kohzo</h2>
+			<img class="rounded-lg shadow-lg" src="/assets/kohzo.jpeg" alt="my cat emmi with airpods sleeping" />
 		</figure>
 	</div>
-	<button class="not-italic text-xl animate-bounce" (click)="playPause()">
-		⏯️
-	</button>
+	<button class="animate-bounce text-xl not-italic" (click)="playPause()">⏯️</button>
 </div>
